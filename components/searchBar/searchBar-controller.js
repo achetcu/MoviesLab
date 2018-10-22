@@ -4,6 +4,8 @@
         const $ctrl = this;
         // $ctrl.text = testService.testProperty;
         // $ctrl.factoryText = testFactory.testProperty;
+        $ctrl.movieList= [
+        ];
 
         $ctrl.newSearch = function(){
 
@@ -15,13 +17,19 @@
         //https://developers.themoviedb.org/3/genres/get-movie-list
 
         
-            final.then((responseData) => {
-                console.log("This is the data", responseData.results[0].known_for);
-                    console.log(final);
-                            });
-                                    };
+        final.then((responseData) => {
+            console.log("This is the data", responseData.results[0].known_for);
+            console.log(final);
+                });
+                $ctrl.addPost();
+       
 
-
-        });
+        } 
+        $ctrl.addPost = function(final){
+            $ctrl.moveList.push(final.results[0].known_for);
+                            };
+    
+    
+    });
     
     }
