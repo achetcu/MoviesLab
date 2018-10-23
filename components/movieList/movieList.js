@@ -3,6 +3,8 @@
     angular.module('app')
     .component('movieList', {
         templateUrl: 'components/movieList/movieList.html',
-        binding: "<"
+        binding:{ 
+            item: '<'
+    }
     })
 }

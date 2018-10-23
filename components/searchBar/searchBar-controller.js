@@ -1,33 +1,33 @@
 "use strict";{
     angular.module('app')
-    .controller('searchBarController', function(testService, testFactory){
+    .controller('searchBarController', function(testService){
         const $ctrl = this;
         // $ctrl.text = testService.testProperty;
-        // $ctrl.factoryText = testFactory.testProperty;
-        $ctrl.movieList= [
-        ];
+        $ctrl.newSearch = testService.newSearch;
+       
+        $ctrl.movieList= [{title: 'dog', test: 'test'}];
 
-        $ctrl.newSearch = function(){
+        // $ctrl.newSearch = function(){
 
-        let url = 'https://api.themoviedb.org/3/';
-        let select = 'search/' + category.value
-        let apiKey = '?api_key=6e48f916ebbed02022fe4614ad964fb3&';
-        let person = 'query=' + $ctrl.search;
-        let final = $.get(url + select + apiKey + person);
-        //https://developers.themoviedb.org/3/genres/get-movie-list
+        // let url = 'https://api.themoviedb.org/3/';
+        // let select = 'search/' + category.value
+        // let apiKey = '?api_key=6e48f916ebbed02022fe4614ad964fb3&';
+        // let person = 'query=' + $ctrl.search;
+        // let final = $.get(url + select + apiKey + person);
+        // //https://developers.themoviedb.org/3/genres/get-movie-list
 
         
-        final.then((responseData) => {
-            console.log("This is the data", responseData.results[0].known_for);
-            console.log(final);
-                });
-                $ctrl.addPost();
+        // final.then((responseData) => {
+        //     console.log("This is the data", responseData.results[0].known_for);
+        //     console.log(final);
+        //         });
+        //         $ctrl.addPost();
        
 
-        } 
-        $ctrl.addPost = function(final){
-            $ctrl.moveList.push(final.results[0].known_for);
-                            };
+        // } 
+        // $ctrl.addPost = function(final){
+        //     $ctrl.movieList.push(final);
+        //                     };
     
     
     });

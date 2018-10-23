@@ -1,5 +1,8 @@
 <h1>Movie List</h1>
 <ul>
-<movie-list ng-repeat="items in $ctrl.movieList" item ="items" >
-    </movie-list>
+    <li ng-repeat="items in $ctrl.movieList" item ="items" >
+            <h4>{{items.title}}</h4>
+              <span> {{items.test}}</span>
+    </li>
 </ul>
+    

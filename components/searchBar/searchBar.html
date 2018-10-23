@@ -6,5 +6,5 @@
         <option value="movie">Title</option>
     </select>
     <input type="text" placeholder="Enter topic" ng-model = "$ctrl.search">
-    <button id="sumbit" ng-click ="$ctrl.newSearch()">Submit</button>
+    <button id="sumbit" ng-click ="$ctrl.newSearch($ctrl.search)">Submit</button>
 </div>
