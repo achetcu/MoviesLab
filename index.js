@@ -17,14 +17,6 @@
         })
     });
     
-// let url = 'https://api.themoviedb.org/3/search/person?';
-// let apiKey = 'api_key=6e48f916ebbed02022fe4614ad964fb3&';
-// let person = 'query=jack%20%nicholson';
-// let final = $.get(url + apiKey + person);
-
-// final.then((responseData) => {
-//     console.log("Look at this", responseData.results);
-// });
 
 }
 

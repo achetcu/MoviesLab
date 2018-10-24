@@ -1,7 +1,7 @@
 "use strict";
 {
     angular.module('app')
-    .service('testService', function($http){
+    .service('movieService', function($http){
         const service = this;
        
         service.testProperty = "this is a test";
@@ -16,7 +16,7 @@
     
             
             final.then((responseData) => {
-                service.movies = responseData
+                service.moviename = responseData.data.results[0].known_for
                 console.log("This is the data", responseData.data);
                 return responseData;
                     

@@ -1,30 +1,15 @@
 "use strict";{
     angular.module('app')
-    .controller('searchBarController', function(testService){
+    .controller('searchBarController', function(movieService){
         const $ctrl = this;
-        // $ctrl.text = testService.testProperty;
-        $ctrl.newSearch = testService.newSearch;
        
-        $ctrl.movieList= [{title: 'dog', test: 'test'}];
-
-        // $ctrl.newSearch = function(){
-
-        // let url = 'https://api.themoviedb.org/3/';
-        // let select = 'search/' + category.value
-        // let apiKey = '?api_key=6e48f916ebbed02022fe4614ad964fb3&';
-        // let person = 'query=' + $ctrl.search;
-        // let final = $.get(url + select + apiKey + person);
-        // //https://developers.themoviedb.org/3/genres/get-movie-list
-
-        
-        // final.then((responseData) => {
-        //     console.log("This is the data", responseData.results[0].known_for);
-        //     console.log(final);
-        //         });
-        //         $ctrl.addPost();
+        $ctrl.newSearch = movieService.newSearch;
+        $ctrl.movieName = movieService.movies;
        
+    
 
-        // } 
+      
+
         // $ctrl.addPost = function(final){
         //     $ctrl.movieList.push(final);
         //                     };

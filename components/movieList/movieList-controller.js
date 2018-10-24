@@ -1,10 +1,15 @@
-// "use strict";{
-//     angular.module('app')
-//     .controller('movieListController', function(testService, testFactory){
-//         const $ctrl = this;
-//         $ctrl.text = testService.testProperty;
-//         $ctrl.factoryText = testFactory.testProperty;
- 
-//         });
+"use strict";{
+    angular.module('app')
+    .controller('movieListController', function(movieService){
+        const $ctrl = this;
+
+        $ctrl.moviename = movieService.moviename;
+       
+        $ctrl.list= [
+            {title: 'test', test: 'test'},
+            {title: 'test', test: 'test'}, 
+           
+            ];
+        });
     
-//     }
+    }

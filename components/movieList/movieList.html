@@ -1,8 +1,9 @@
-<h1>Movie List</h1>
-<ul>
-    <li ng-repeat="items in $ctrl.movieList" item ="items" >
-            <h4>{{items.title}}</h4>
-              <span> {{items.test}}</span>
-    </li>
-</ul>
+<ol>
+<li ng-repeat="item in $ctrl.list">
+    <h4>{{item.title}}</h4>
     
+      <span> {{item.test}}</span>
+    </li>
+
+</ol>
+    <p>{{$ctrl.moviename}}</p>
