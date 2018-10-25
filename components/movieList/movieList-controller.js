@@ -7,7 +7,7 @@
         // $ctrl.movie = movieService.movielist;
         // $ctrl.names = movieService.resultslist
         $ctrl.name = movieService.moviename
-       
+        $ctrl.titles = movieService.movietitle
         $ctrl.list= [
             {title: 'test', test: 'test'},
             {title: 'test', test: 'test'}, 
