@@ -3,7 +3,10 @@
     .controller('movieListController', function(movieService){
         const $ctrl = this;
 
-        $ctrl.moviename = movieService.moviename;
+        // $ctrl.moviename = movieService.moviename;
+        // $ctrl.movie = movieService.movielist;
+        // $ctrl.names = movieService.resultslist
+        $ctrl.name = movieService.moviename
        
         $ctrl.list= [
             {title: 'test', test: 'test'},

@@ -4,7 +4,9 @@
         const $ctrl = this;
        
         $ctrl.newSearch = movieService.newSearch;
-        $ctrl.movieName = movieService.movies;
+        // $ctrl.resultlist = movieService.apicall;
+
+        
        
     
 

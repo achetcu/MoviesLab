@@ -6,4 +6,12 @@
     </li>
 
 </ol>
-    <p>{{$ctrl.moviename}}</p>
+    <!-- <p>{{$ctrl.moviename}}</p>
+    <p>{{$ctrl.movie}}</p>  -->
+    <ol ng-repeat="actor in $ctrl.name">
+        <li>{{actor.title}}</li>
+        <li>{{actor.overview}}</li>
+
+
+        </ol>
+    
