@@ -1,0 +1,20 @@
+body {
+ background-color: #361414;
+ color: white;
+}
+
+nav {
+ background-color: white;
+ height: 100px;
+}
+
+.popcorn {
+ height: 100px;
+ width: 100px;
+ float: right;
+}
+
+.moviepic {
+ height: 100px;
+ width: 200px;
+}
