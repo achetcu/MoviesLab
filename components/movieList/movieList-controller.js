@@ -8,9 +8,6 @@
         // $ctrl.names = movieService.resultslist
         $ctrl.name = movieService.moviename
         $ctrl.titles = movieService.movietitle
-        $ctrl.list= [
-           
-            ];
-        });
+              });
     
     }

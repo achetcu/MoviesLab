@@ -1,18 +1,9 @@
-<!-- <ol>
-<li ng-repeat="item in $ctrl.list">
-    <h4>{{item.title}}</h4>
-    
-      <span> {{item.test}}</span>
-    </li>
-
-</ol> -->
-    <!-- <p>{{$ctrl.moviename}}</p>
-    <p>{{$ctrl.movie}}</p>  -->
-    <ul ng-repeat="result in $ctrl.name"><img class = "moviepic" src = "https://image.tmdb.org/t/p/w500/{{result.backdrop_path}}"> 
-        <li>{{result.name || result.title}}</li>
-        <li ng-if="result.overview"> {{result.overview}}</li>
+    <ul ng-repeat="result in $ctrl.name"><img class = "moviepic" ng-if ="result.backdrop_path" src = "https://image.tmdb.org/t/p/w500/{{result.backdrop_path}}"> 
+        <li ng-if = "result.name"> Actor: {{result.name}}</li>
+        <li ng-if = "result.title"> Movie Name: {{result.title}}</li>
+        <li ng-if="result.overview"> <button class = "about"> More info </button> About: {{result.overview}}</li>
         <ul ng-repeat="known in result.known_for">
-        <li>{{known.title || known.original_name}}</li>
+        <li> {{known.title || known.original_name}}</li>
     </ul>
 
 </ul>

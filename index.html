@@ -1,6 +1,6 @@
-
 <!DOCTYPE html>
-<html lang="en" ng-app ="app">
+<html lang="en" ng-app="app">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,30 +9,32 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <title>Movies</title>
 </head>
-<body>
-    
-<nav>
-    <a href = "#!/">Home - Search</a>
-    <a href = "#!/movieList">Movie List</a>
-    <a href = "#!/watchList">Watch List</a>
-    <img class = "popcorn" src="popcorn-movie.jpg" alt="Popcorn with a movie reel"/>
-</nav>
-<ng-view></ng-view>
 
-    <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.7.4/angular.min.js"></script>
-    <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.7.4/angular-route.min.js"></script>
+<body>
+
+    <nav>
+        <a href="#!/">Home - Search</a>
+        <a href="#!/movieList">Movie List</a>
+        <a href="#!/watchList">Watch List</a>
+        <img class="popcorn" src="popcorn-movie.jpg" alt="Popcorn with a movie reel" />
+    </nav>
+    <ng-view></ng-view>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.4/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.4/angular-route.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-    crossorigin="anonymous"></script>
-    <script src = "index.js"></script>
-   
-    <script src = "components/movieList/movieList.js"></script>
-    <script src = "components/movieList/movieList-controller.js"></script>
-    <script src = "components/searchBar/searchBar.js"></script>
-    <script src = "components/searchBar/searchBar-controller.js"></script>
-    <script src = "components/watchList/watchList.js"></script>
-    <script src = "components/watchList/watchList-controller.js"></script>
-    <script src = "service/movie-service.js"></script>
-   
-   
+        crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+
+    <script src="components/movieList/movieList.js"></script>
+    <script src="components/movieList/movieList-controller.js"></script>
+    <script src="components/searchBar/searchBar.js"></script>
+    <script src="components/searchBar/searchBar-controller.js"></script>
+    <script src="components/watchList/watchList.js"></script>
+    <script src="components/watchList/watchList-controller.js"></script>
+    <script src="service/movie-service.js"></script>
+
+
 </body>
+
 </html>
