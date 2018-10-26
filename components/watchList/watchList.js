@@ -3,7 +3,12 @@
     angular.module('app')
     .component('watchList',{
         controller: 'watchListController',
-        templateUrl:'components/watchList/watchList.html'
+        templateUrl:'components/watchList/watchList.html',
+        bindings:{
+            item:'<',
+            
+           
+        }
     })
     
 }

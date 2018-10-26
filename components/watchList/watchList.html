@@ -1,0 +1,11 @@
+<h2>Watch List</h2>
+    <ul ng-repeat="result in $ctrl.add"><img class = "moviepic" ng-if ="result.backdrop_path" src = "https://image.tmdb.org/t/p/w500/{{result.backdrop_path}}"> 
+       
+        <li ng-if = "result.name"> Actor: {{result.name}}</li>
+        <li ng-if = "result.title"> Movie Name: {{result.title}}</li>
+        <li ng-if="result.overview"><button class = "about" ng-click = "$ctrl.showOverview(result)" >More info</button>
+            <p ng-if = "!result.showOverview">
+        About: {{result.overview}}
+        <button ng-click = "$ctrl.remove($event)">Remove</button>
+    </p></li>
+   

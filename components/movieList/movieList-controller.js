@@ -2,12 +2,20 @@
     angular.module('app')
     .controller('movieListController', function(movieService){
         const $ctrl = this;
-
-        // $ctrl.moviename = movieService.moviename;
-        // $ctrl.movie = movieService.movielist;
-        // $ctrl.names = movieService.resultslist
         $ctrl.name = movieService.moviename
         $ctrl.titles = movieService.movietitle
+        
+        $ctrl.showOverview = function(movie){
+            movie.showOverview = !movie.showOverview
+        }
+        $ctrl.showMore = function(movie){
+            movie.showOverview = !movie.showOverview
+        }
+
+       $ctrl.watchList = function(result){
+            movieService.watch.push(result)
+           }
+
               });
     
     }

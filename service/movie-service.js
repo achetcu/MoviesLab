@@ -5,6 +5,7 @@
         const service = this;
         service.moviename = [];
         service.movietitle = [];
+        service.watch = [];
         //let responseData = [];
         //service.apicall = responseData;
         
@@ -27,7 +28,7 @@
                 // for(var i = 0; i<service.moviename.length; i++){
                 //     service.movietitle = responseData.data.results[i].known_for
                 // };
-                // console.log("This is the data", responseData.data);
+                console.log("This is the data", responseData.data);
                 
                 // return [service.moviename, service.movietitle]
                 return service.moviename;
