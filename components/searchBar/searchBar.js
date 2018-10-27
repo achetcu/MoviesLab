@@ -4,9 +4,7 @@
     .component('searchBar',{
         controller: 'searchBarController',
         templateUrl:'components/searchBar/searchBar.html',
-        binding:{ 
-            item: '<'
-    }
+
     })
     
 }

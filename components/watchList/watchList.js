@@ -4,11 +4,7 @@
     .component('watchList',{
         controller: 'watchListController',
         templateUrl:'components/watchList/watchList.html',
-        bindings:{
-            item:'<',
-            
-           
-        }
+        
     })
     
 }

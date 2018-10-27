@@ -1,9 +1,9 @@
 <div class="search">
-    <h3>Select what you would like to search by</h3>
+    <h3>Select what you would like to search by:</h3>
     <select id="category" name="category" ng-model="$ctrl.category">
-        <option value="person">Person</option>
-        <option value="genre">Genre</option>
-        <option value="movie">Title</option>
+        <option value="search/person">Actor</option>
+        <option value="search/movie">Movie Title</option>
+        <option value="movie/popular">Trending Movies</option>
     </select>
     <input type="text" placeholder="Enter topic" ng-model = "$ctrl.search">
     <button id="submit" ng-click ="$ctrl.newSearch($ctrl.search, $ctrl.category)">Submit</button>
