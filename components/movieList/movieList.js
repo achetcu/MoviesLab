@@ -1,9 +1,8 @@
-"use strict";
-{
+"use strict"; {
     angular.module('app')
-    .component('movieList', {
-        controller: 'movieListController',
-        templateUrl: 'components/movieList/movieList.html',
-      
-    })
+        .component('movieList', {
+            controller: 'movieListController',
+            templateUrl: 'components/movieList/movieList.html',
+
+        })
 }

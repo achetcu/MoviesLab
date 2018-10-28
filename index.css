@@ -1,46 +1,88 @@
 body {
-    background-color: #361414;
-    color: #eeeeee;
-    font-family: 'Quicksand', sans-serif;
-    text-shadow: 1px 1px 2px rgba(108, 0, 0, 1);
-   }
-   nav {
-    background-color: #eeeeee;
-    height: 100px;
-   }
-   input, #category {
-    color: #361414;
-    background-color: #eeeeee;
-   }
-   .popcorn {
-    height: 100px;
-    width: 100px;
-    float: right;
-   }
-   .moviepic {
-    height: 100px;
-    width: 200px;
-   }
-   ul, li {
-    list-style: none;
-    font-family: 'Quicksand', sans-serif, bold;
-   }
-   .about, #submit {
-    color: rgb(230, 230, 230);
-    font-size: 13px;
-    padding: 11px;
-    text-shadow: 0px -1px 0px rgba(30, 30, 30, 0.8);
-    -webkit-border-radius: 30px;
-    -moz-border-radius: 30px;
-    border-radius: 30px;
-    background: rgb(73, 0, 0);
-    background: -moz-linear-gradient(90deg, rgb(73, 0, 0) 30%, rgb(140, 0, 0) 70%);
-    background: -webkit-linear-gradient(90deg, rgb(73, 0, 0) 30%, rgb(140, 0, 0) 70%);
-    background: -o-linear-gradient(90deg, rgb(73, 0, 0) 30%, rgb(140, 0, 0) 70%);
-    background: -ms-linear-gradient(90deg, rgb(73, 0, 0) 30%, rgb(140, 0, 0) 70%);
-    background: linear-gradient(0deg, rgb(73, 0, 0) 30%, rgb(140, 0, 0) 70%);
-    -webkit-box-shadow: 4px 3px 1px rgba(223, 186, 0, 0.75);
-    -moz-box-shadow:    4px 3px 1px rgba(223, 186, 0, 0.75);
-    box-shadow:         4px 3px 1px rgba(223, 186, 0, 0.75);
-    
-   }
+ background-color: #361414;
+ color: #eeeeee;
+ font-family: 'Quicksand', sans-serif;
+ text-shadow: 1px 1px 0px rgba(108, 0, 0, 1);
+}
+
+nav {
+ background-color: #eeeeee;
+ height: 100px;
+ width: 100%;
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+}
+
+.links {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ padding-left: 5px;
+}
+
+.title {
+ display: flex;
+ font-family: 'Quicksand', sans-serif;
+ color: white;
+ background-color: #361414;
+ text-shadow: 2px 2px 0px rgba(223, 216, 0, 1);
+ font-size: 75px;
+ justify-content: center;
+ width: 80%;
+}
+
+.popcorn {
+ height: 100px;
+ width: 100px;
+}
+
+input,
+#category {
+ color: #361414;
+ background-color: #eeeeee;
+}
+
+input {
+ width: 50%;
+}
+
+.moviepic {
+ height: 100px;
+ width: 200px;
+}
+
+label {
+ font-family: 'Roboto', sans-serif;
+ text-decoration: rgba(223, 216, 0, 1) underline overline wavy;
+}
+
+ul,
+li {
+ list-style: none;
+ font-family: 'Quicksand', sans-serif, bold;
+}
+
+.about,
+#submit,
+.watch,
+.delete {
+ color: rgb(230, 230, 230);
+ font-size: 13px;
+ padding: 11px;
+ text-shadow: 0px -1px 0px rgba(30, 30, 30, 0.8);
+ -webkit-border-radius: 30px;
+ -moz-border-radius: 30px;
+ border-radius: 30px;
+ background: rgb(73, 0, 0);
+ background: -moz-linear-gradient(90deg, rgb(73, 0, 0) 30%, rgb(140, 0, 0) 70%);
+ background: -webkit-linear-gradient(90deg, rgb(73, 0, 0) 30%, rgb(140, 0, 0) 70%);
+ background: -o-linear-gradient(90deg, rgb(73, 0, 0) 30%, rgb(140, 0, 0) 70%);
+ background: -ms-linear-gradient(90deg, rgb(73, 0, 0) 30%, rgb(140, 0, 0) 70%);
+ background: linear-gradient(0deg, rgb(73, 0, 0) 30%, rgb(140, 0, 0) 70%);
+ -webkit-box-shadow: 4px 3px 1px rgba(223, 216, 0, 1);
+ -moz-box-shadow: 4px 3px 1px rgba(223, 216, 0, 1);
+ box-shadow: 4px 3px 1px rgba(223, 216, 0, 1);
+
+}

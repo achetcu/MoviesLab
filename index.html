@@ -9,16 +9,20 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700" rel="stylesheet">
-    <title>Movies</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:700" rel="stylesheet">
+    <title>The Movie Lab</title>
 </head>
 
 <body>
 
     <nav>
-        <a href="#!/">Home - Search</a>
-        <a href="#!/movieList">Movie List</a>
-        <a href="#!/watchList">Watch List</a>
+        <span class="links">
+            <a class="home" href="#!/">Home (Search)</a>
+            <a class="movieList" href="#!/movieList">Movie List</a>
+            <a class="favorite" href="#!/watchList">Watch List</a> </span>
+        <section class="title">The Movie Lab</section>
         <img class="popcorn" src="popcorn-movie.jpg" alt="Popcorn with a movie reel" />
+
     </nav>
     <ng-view></ng-view>
 

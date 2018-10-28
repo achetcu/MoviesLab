@@ -1,12 +1,12 @@
-"use strict";{
+"use strict"; {
     angular.module('app')
-    .controller('searchBarController', function(movieService){
-        const $ctrl = this;
-       
-        $ctrl.newSearch = movieService.newSearch;
+        .controller('searchBarController', function (movieService) {
+            const $ctrl = this;
 
-        
-    
-    });
-    
-    }
+            $ctrl.newSearch = movieService.newSearch;
+
+
+
+        });
+
+}
