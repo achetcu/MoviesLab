@@ -1,3 +1,5 @@
+<h2>Results:</h2>
+
 <ul ng-repeat="result in $ctrl.name"><img class="moviepic" ng-if="result.backdrop_path" src="https://image.tmdb.org/t/p/w500/{{result.backdrop_path}}">
 
     <li ng-if="result.name"> <label> Actor: </label>{{result.name}}</li>

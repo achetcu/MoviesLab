@@ -48,6 +48,10 @@ input {
  width: 50%;
 }
 
+h2, h3 {
+ text-shadow: 2px 2px 0px rgb(180, 174, 4);
+}
+
 .moviepic {
  height: 100px;
  width: 200px;
