@@ -3,9 +3,9 @@
 
     <li ng-if="result.name"> <label> Actor: </label>{{result.name}}</li>
     <li ng-if="result.title"> <label>Movie Name: </label> {{result.title}}</li>
-    <li ng-if="result.overview"><button class="about" ng-click="$ctrl.showOverview(result)">More info</button>
+    <li ng-if="result.overview"><button class="about" ng-click="$ctrl.showOverview(result)">More info</button><button class="delete" ng-click="$ctrl.remove($index)">Remove</button>
         <p ng-if="!result.showOverview">
             <label> About: </label>{{result.overview}}
-            <button class="delete" ng-click="$ctrl.remove($index)">Remove</button>
+            
         </p>
     </li>

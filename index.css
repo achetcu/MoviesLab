@@ -92,6 +92,6 @@ li {
  box-shadow: 2px 2px 0px rgba(223, 216, 0, 1);
 }
 
-.watch {
+.watch, .delete {
  margin-left: 10px;
 }
