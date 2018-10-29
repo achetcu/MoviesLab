@@ -49,7 +49,7 @@ input {
 }
 
 h2, h3 {
- text-shadow: 2px 2px 0px rgb(180, 174, 4);
+ text-shadow: 1px 1px 0px rgb(180, 174, 4);
 }
 
 .moviepic {
@@ -72,10 +72,11 @@ li {
 #submit,
 .watch,
 .delete {
- color: rgb(230, 230, 230);
+ color: #eeeeee;
  font-size: 13px;
  padding: 11px;
- text-shadow: 0px -1px 0px rgba(30, 30, 30, 0.8);
+ margin-top: 5px;
+ /* text-shadow: 0px -1px 0px rgba(30, 30, 30, 0.8); */
  -webkit-border-radius: 30px;
  -moz-border-radius: 30px;
  border-radius: 30px;
@@ -85,8 +86,8 @@ li {
  background: -o-linear-gradient(90deg, rgb(73, 0, 0) 30%, rgb(140, 0, 0) 70%);
  background: -ms-linear-gradient(90deg, rgb(73, 0, 0) 30%, rgb(140, 0, 0) 70%);
  background: linear-gradient(0deg, rgb(73, 0, 0) 30%, rgb(140, 0, 0) 70%);
- -webkit-box-shadow: 4px 3px 1px rgba(223, 216, 0, 1);
- -moz-box-shadow: 4px 3px 1px rgba(223, 216, 0, 1);
- box-shadow: 4px 3px 1px rgba(223, 216, 0, 1);
+ -webkit-box-shadow: 2px 2px 0px rgba(223, 216, 0, 1);
+ -moz-box-shadow: 2px 2px 0px rgba(223, 216, 0, 1);
+ box-shadow: 2px 2px 0px rgba(223, 216, 0, 1);
 
 }
