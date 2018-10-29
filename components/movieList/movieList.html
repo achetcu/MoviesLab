@@ -4,20 +4,20 @@
 
     <li ng-if="result.name"> <label> Actor: </label>{{result.name}}</li>
     <li ng-if="result.title"><label> Movie Name: </label>{{result.title}}</li>
-    <li ng-if="result.overview"><button class="about" ng-click="$ctrl.showOverview(result)">More info</button>
+    <li ng-if="result.overview"><button class="about" ng-click="$ctrl.showOverview(result)">More info</button><button class="watch" ng-click="$ctrl.watchList(result)">Add to Watch</button>
         <p ng-if="result.showOverview"> <label>
                 About: </label> {{result.overview}}
-            <button class="watch" ng-click="$ctrl.watchList(result)">Add to Watch</button>
+            
         </p>
     </li>
     <ul ng-repeat="known in result.known_for">
         <li> {{known.title || known.original_name}}</li>
         <li ng-if="known.overview">
             <img class="moviepic" ng-if="known.backdrop_path" src="https://image.tmdb.org/t/p/w500/{{known.backdrop_path}}">
-            <button class="about" ng-click="$ctrl.showMore(known)">More info</button>
+            <button class="about" ng-click="$ctrl.showMore(known)">More info</button>  <button class="watch" ng-click="$ctrl.watchList(known)">Add to Watch</button>
             <p ng-if="known.showOverview"> <label>
                     About: </label> {{known.overview}}
-                <button class="about" ng-click="$ctrl.watchList(known)">Add to Watch</button>
+              
             </p>
         </li>
     </ul>
