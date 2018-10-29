@@ -1,11 +1,12 @@
 "use strict"; {
     angular.module('app')
-        .service('movieService', function ($http) {
+        .service('movieService', function ($http, $location) {
             const service = this;
             service.moviename = [];
             service.movietitle = [];
             service.watch = [];
 
+            
 
             service.newSearch = function (search, category) {
                 let url = 'https://api.themoviedb.org/3/';
@@ -19,7 +20,7 @@
                 final.then((responseData) => {
                     service.moviename = responseData.data.results;
                     console.log("This is the data", responseData.data);
-
+                    $location.path('/movieList');
                     return service.moviename;
 
 
