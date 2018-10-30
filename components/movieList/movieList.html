@@ -8,6 +8,11 @@
         <button class="watch" ng-click="$ctrl.watchList(result)">Add to Watch</button>
         <p ng-if="result.showOverview"> <label>
                 About: </label> {{result.overview}}
+    <li ng-if="result.overview"><button class="about" ng-click="$ctrl.showOverview(result)">More info</button>
+        <button class="watch" ng-click="$ctrl.watchList(result)">Add to Watch</button>
+        <p ng-if="result.showOverview"> <label>
+                About: </label> {{result.overview}}
+            
         </p>
     </li>
     <ul ng-repeat="known in result.known_for">
@@ -18,6 +23,11 @@
             <button class="about" ng-click="$ctrl.watchList(known)">Add to Watch</button>
             <p ng-if="known.showOverview"> <label>
                     About: </label> {{known.overview}}
+            <button class="about" ng-click="$ctrl.showMore(known)">More info</button> 
+            <button class="watch" ng-click="$ctrl.watchList(known)">Add to Watch</button>
+            <p ng-if="known.showOverview"> <label>
+                    About: </label> {{known.overview}}
+              
             </p>
         </li>
     </ul>
