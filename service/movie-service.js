@@ -6,7 +6,7 @@
             service.movietitle = [];
             service.watch = [];
 
-            
+
 
             service.newSearch = function (search, category) {
                 let url = 'https://api.themoviedb.org/3/';

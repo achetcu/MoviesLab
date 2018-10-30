@@ -4,7 +4,7 @@
             const $ctrl = this;
 
             $ctrl.newSearch = movieService.newSearch;
-    
+
 
         });
 

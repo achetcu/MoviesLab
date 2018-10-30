@@ -14,24 +14,28 @@ nav {
  justify-content: space-between;
 }
 
+.page {
+ text-align: center;
+}
+
 .links {
  display: flex;
  flex-direction: column;
  align-items: center;
  justify-content: center;
  padding-left: 5px;
+ font-size: 15px;
 }
 
 .title {
  display: flex;
  font-family: 'Quicksand', sans-serif;
- color: white;
+ color: black;
  background-color: #361414;
- text-shadow: 2px 2px 0px rgba(223, 216, 0, 1);
- font-size: 75px;
+ -webkit-text-stroke: 1px rgba(223, 216, 0, 1);
+ font-size: 90px;
  justify-content: center;
  width: 80%;
- text-decoration: #eeeeee underline solid;
 }
 
 .popcorn {
@@ -49,18 +53,25 @@ input {
  width: 50%;
 }
 
-h2, h3 {
+h2,
+h3 {
  text-shadow: 1px 1px 0px rgb(180, 174, 4);
 }
 
 .moviepic {
- height: 100px;
- width: 200px;
+ height: 300px;
+ width: 500px;
+ margin-bottom: 10px;
+}
+
+li {
+ font-size: 30px;
 }
 
 label {
  font-family: 'Roboto', sans-serif;
- text-decoration: rgba(223, 216, 0, 1) underline overline wavy;
+ -webkit-text-stroke: 1px rgba(223, 216, 0, 1);
+ color: black;
 }
 
 ul,
@@ -73,25 +84,27 @@ li {
 #submit,
 .watch,
 .delete {
- color: #eeeeee;
- font-size: 13px;
+ color: black;
+ -webkit-text-stroke: 1px rgba(223, 216, 0, 1);
+ font-size: 20px;
  padding: 11px;
  margin-top: 5px;
- /* text-shadow: 0px -1px 0px rgba(30, 30, 30, 0.8); */
+ margin-bottom: 10px;
  -webkit-border-radius: 30px;
  -moz-border-radius: 30px;
  border-radius: 30px;
  background: rgb(73, 0, 0);
- background: -moz-linear-gradient(90deg, rgb(73, 0, 0) 30%, rgb(140, 0, 0) 70%);
- background: -webkit-linear-gradient(90deg, rgb(73, 0, 0) 30%, rgb(140, 0, 0) 70%);
- background: -o-linear-gradient(90deg, rgb(73, 0, 0) 30%, rgb(140, 0, 0) 70%);
- background: -ms-linear-gradient(90deg, rgb(73, 0, 0) 30%, rgb(140, 0, 0) 70%);
- background: linear-gradient(0deg, rgb(73, 0, 0) 30%, rgb(140, 0, 0) 70%);
+ background: -webkit-linear-gradient(238deg, rgb(73, 0, 0) 0%, #eeeeee 87%);
+ background: -moz-linear-gradient(238deg, rgb(73, 0, 0) 0%, #eeeeee 87%);
+ background: -o-linear-gradient(238deg, rgb(73, 0, 0) 0%, #eeeeee 87%);
+ background: -ms-linear-gradient(238deg, rgb(73, 0, 0) 0%, #eeeeee 87%);
+ background: linear-gradient(148deg, rgb(73, 0, 0) 0%, #f04f4f 87%);
  -webkit-box-shadow: 2px 2px 0px rgba(223, 216, 0, 1);
  -moz-box-shadow: 2px 2px 0px rgba(223, 216, 0, 1);
  box-shadow: 2px 2px 0px rgba(223, 216, 0, 1);
 }
 
-.watch, .delete {
+.watch,
+.delete {
  margin-left: 10px;
 }
