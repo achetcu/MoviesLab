@@ -1,6 +1,6 @@
 <h2>Watch List</h2>
 <section class="page">
-<input type = "text" class = 'sort' placeholder="Filter results" ng-model = "searchList"/>
+<input type = "text" class = "sort" placeholder="Filter results" ng-model = "searchList"/>
         <ul ng-repeat="result in $ctrl.add | filter: searchList"><img class="moviepic" ng-if="result.backdrop_path" src="https://image.tmdb.org/t/p/w500/{{result.backdrop_path}}">
 
                 <li ng-if="result.name"> <label> Actor: </label>{{result.name}}</li>
