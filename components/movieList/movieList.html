@@ -1,6 +1,7 @@
 <h2>Results:</h2>
 <section class="page">
-    <ul ng-repeat="result in $ctrl.name"><img class="moviepic" ng-if="result.backdrop_path" src="https://image.tmdb.org/t/p/w500/{{result.backdrop_path}}">
+        <input type = "text" class = "sort" placeholder="Filter results" ng-model = "searchList"/>
+    <ul ng-repeat="result in $ctrl.name | filter: searchList"><img class="moviepic" ng-if="result.backdrop_path" src="https://image.tmdb.org/t/p/w500/{{result.backdrop_path}}">
 
         <li ng-if="result.name"> <label> Actor: </label>{{result.name}}</li>
         <li ng-if="result.title"><label> Movie Name: </label>{{result.title}}</li>
@@ -11,7 +12,7 @@
                     About: </label> {{result.overview}}
             </p>
         </li>
-        <ul ng-repeat="known in result.known_for">
+        <ul ng-repeat="known in result.known_for | filter: searchList">
             <li> <label>Movie title: </label>{{known.title || known.original_name}}</li>
             <img class="moviepic" ng-if="known.backdrop_path" src="https://image.tmdb.org/t/p/w500/{{known.backdrop_path}}">
             <li ng-if="known.overview">
